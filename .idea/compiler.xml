@@ -7,11 +7,13 @@
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
         <module name="github-cicd-actions" />
+        <module name="SpingBootGA" />
       </profile>
     </annotationProcessing>
   </component>
   <component name="JavacSettings">
     <option name="ADDITIONAL_OPTIONS_OVERRIDE">
+      <module name="SpingBootGA" options="-parameters" />
       <module name="github-cicd-actions" options="-parameters" />
     </option>
   </component>
